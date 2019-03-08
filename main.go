@@ -5,12 +5,25 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"math/rand"
 	"net/http"
 )
 
 func main() {
+
+	var topics = []string{
+		"5618c159add4471100150637", // 浴室沉思
+		"557ed045e4b0a573eb66b751", // 无用但有趣的冷知识
+		"5a82a88df0eddb00179c1df7", // 今日烂梗
+		"572c4e31d9595811007a0b6b", // 弱智金句病友会
+		"56d177a27cb3331100465f72", // 今日金句
+		"5aa21c7ae54af10017dc93f8", // 一个想法不一定对
+	}
+
+	var topicdIndex = rand.Intn(len(topics))
+
 	url := "https://app.jike.ruguoapp.com/1.0/squarePosts/list"
-	jsonStr := []byte(`{"topicId": "5618c159add4471100150637", "limit": 1}`)
+	jsonStr := []byte(`{"topicId": "` + topics[topicdIndex] + `", "limit": 1}`)
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 	req.Header.Set("Content-Type", "application/json")
 
