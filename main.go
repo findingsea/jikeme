@@ -42,7 +42,8 @@ func main() {
 	}
 
 	contentData := dat["data"].([]interface{})
-	content := contentData[0].(map[string]interface{})
+	contentIndex := rand.Intn(len(contentData))
+	content := contentData[contentIndex].(map[string]interface{})
 	fmt.Println(content["content"].(string))
 	fmt.Println("--", (content["topic"].(map[string]interface{})["content"].(string)))
 }
