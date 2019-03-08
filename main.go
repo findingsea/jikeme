@@ -20,7 +20,7 @@ func main() {
 		"5aa21c7ae54af10017dc93f8", // 一个想法不一定对
 	}
 
-	var topicdIndex = rand.Intn(len(topics))
+	topicdIndex := rand.Intn(len(topics))
 
 	url := "https://app.jike.ruguoapp.com/1.0/squarePosts/list"
 	jsonStr := []byte(`{"topicId": "` + topics[topicdIndex] + `", "limit": 1}`)
