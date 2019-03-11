@@ -26,12 +26,12 @@ go get -u github.com/findingsea/jikeme
 
 在终端执行 `jikeme` 命令，即可出发摸🐟！
 
-目前支持的广场：
+目前支持的圈子：
 
 * 浴室沉思
 * 无用但有趣的冷知识
 * 今日烂梗
-* 弱智金句病友会
+* 弱智金句大赏
 * 今日金句
 * 一个想法不一定对
 
@@ -43,6 +43,6 @@ Let's moyu！
 
 :bulb: jikeme
 
-Authored by [@findingsea](https://github.com/findingsea/). Maintained by [contributers](https://github.com/findingsea/jikeme/graphs/contributors). :heart:
+Authored by [@findingsea](https://github.com/findingsea/). :heart:
 
 [@GitHub](https://github.com/findingsea/) · [@Blog](https://findingsea.github.io)
