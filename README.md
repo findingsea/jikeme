@@ -43,6 +43,6 @@ Let's moyu！
 
 :bulb: jikeme
 
-Authored by [@findingsea](https://github.com/findingsea/). :heart:
+Authored by [@findingsea](https://github.com/findingsea/). Maintained by [@findingsea](https://github.com/findingsea/) & [@ChungZH](https://github.com/ChungZH). :heart:
 
 [@GitHub](https://github.com/findingsea/) · [@Blog](https://findingsea.github.io)
