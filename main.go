@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -20,10 +21,11 @@ func main() {
 		"5aa21c7ae54af10017dc93f8", // 一个想法不一定对
 	}
 
-	topicdIndex := rand.Intn(len(topics))
-
+	s1 := rand.NewSource(time.Now().UnixNano())
+	r1 := rand.New(s1)
+	topicdIndex := r1.Intn(len(topics))
 	url := "https://app.jike.ruguoapp.com/1.0/squarePosts/list"
-	jsonStr := []byte(`{"topicId": "` + topics[topicdIndex] + `", "limit": 1}`)
+	jsonStr := []byte(`{"topicId": "` + topics[topicdIndex] + `", "limit": 20}`)
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 	req.Header.Set("Content-Type", "application/json")
 
@@ -41,8 +43,11 @@ func main() {
 		panic(err)
 	}
 
+	s2 := rand.NewSource(time.Now().UnixNano())
+	r2 := rand.New(s2)
+
 	contentData := dat["data"].([]interface{})
-	contentIndex := rand.Intn(len(contentData))
+	contentIndex := r2.Intn(len(contentData))
 	content := contentData[contentIndex].(map[string]interface{})
 	fmt.Println(content["content"].(string))
 	fmt.Println("--", (content["topic"].(map[string]interface{})["content"].(string)))
