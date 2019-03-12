@@ -19,6 +19,9 @@ func main() {
 		"572c4e31d9595811007a0b6b", // 弱智金句病友会
 		"56d177a27cb3331100465f72", // 今日金句
 		"5aa21c7ae54af10017dc93f8", // 一个想法不一定对
+		"5bf22b38ffa4f00017e1a8ff", // 有一点哲学在里面
+		"5ab89ff5892a1a0011d1ba87", // 记一件小事
+		"597ae4ac096cde0012cf6c06"  // 科技圈大小事
 	}
 
 	s := rand.NewSource(time.Now().UnixNano())
