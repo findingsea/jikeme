@@ -34,6 +34,9 @@ go get -u github.com/findingsea/jikeme
 * 弱智金句大赏
 * 今日金句
 * 一个想法不一定对
+* 有一点哲学在里面
+* 记一件小事
+* 科技圈大小事
 
 > 如果你有好的建议，欢迎提 issue 或 pr。~~当然我们更爱 pr~~
 
