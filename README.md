@@ -42,6 +42,10 @@ go get -u github.com/findingsea/jikeme
 
 Let's moyu！
 
+## Changelog
+
+* 2019-03-13: 增加输出作者名
+
 ------
 
 :bulb: jikeme
