@@ -46,9 +46,12 @@ func main() {
 		panic(err)
 	}
 
-	contentData := dat["data"].([]interface{})
-	contentIndex := r.Intn(len(contentData))
-	content := contentData[contentIndex].(map[string]interface{})
-	fmt.Println(content["content"].(string))
-	fmt.Println("--", (content["topic"].(map[string]interface{})["content"].(string)))
+	dataArr := dat["data"].([]interface{})
+	dataIndex := r.Intn(len(dataArr))
+	data := dataArr[dataIndex].(map[string]interface{})
+	content := data["content"].(string)
+	user := data["user"].(map[string]interface{})["screenName"].(string)
+	topic := data["topic"].(map[string]interface{})["content"].(string)
+	fmt.Println(content)
+	fmt.Println("--", user+", 「"+topic+"」")
 }
