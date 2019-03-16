@@ -8,6 +8,8 @@
 
 ~~当然了，要捕鲸的话，还是打开黄即刷即刻吧！~~
 
+![jikeme](https://raw.githubusercontent.com/findingsea/jikeme/master/dist/exmaple.gif)
+
 ## 适用场景
 
 * **等编译的时候**
